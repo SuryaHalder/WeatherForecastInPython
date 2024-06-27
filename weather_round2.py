@@ -5,7 +5,7 @@ import requests
 def data_get():
     lat_data=lat.get()
     long_data=long.get()
-    data=requests.get("https://api.openweathermap.org/data/2.5/weather?lat="+lat_data+"&lon="+long_data+"&appid=e0271831ff74ca3f2ce3374b17c034fa").json()
+    data=requests.get("https://api.openweathermap.org/data/2.5/weather?lat="+lat_data+"&lon="+long_data+"&appid=?????").json()
 
 
     wval_label.config(text=data["weather"][0]["main"])
